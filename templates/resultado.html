@@ -1,0 +1,19 @@
+{% if tmb is not none and get is not none %}
+<div class="card mt-4 shadow-lg border-dark">
+    <div class="card-header bg-black text-white">
+        <h4 class="mb-0">Resultados del Cálculo</h4>
+    </div>
+    <div class="card-body">
+        <p class="fs-5">
+            Tasa Metabólica Basal (TMB):
+            <span class="badge text-bg-dark">{{ tmb }} kcal/día</span>
+        </p>
+        <p class="fs-5">
+            Gasto Energético Total (GET):
+            <span class="badge text-bg-dark">{{ get }} kcal/día</span>
+        </p>
+        <hr>
+        <small class="text-muted">El GET es el total de calorías que se estima que quemas diariamente.</small>
+    </div>
+</div>
+{% endif %}
